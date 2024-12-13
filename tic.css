@@ -1,130 +1,96 @@
+.tic-tac-toe-bg {
+    background: linear-gradient(135deg, #f6d365 0%, #fda085 100%);
+    /* height: 100vh; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Consolas", monospace;
+}
 
-.tic-tac-toe-bg{
-    background-color: #fff7de;
-    height:100vh;
-}
 h1 {
-    padding-top:10px;
-    color:rgba(235, 22, 22, 0.764);
-    margin-bottom: -5px;
-    font-family:"consolas";
-    font-weight:600;
-    font-size:30px
+    color: #2c3e50;
+    font-size: 2.5rem;
+    text-shadow: 2px 2px #ecf0f1;
+    margin-bottom: 10px;
+    margin-left: 13px;
 }
-p {
-    margin-bottom: -10px;
-    font-family:"consolas";
-    font-weight:400;
-    font-size:14px
+
+#ins {
+    color: #34495e;
+    font-size: 1rem;
+    margin-bottom: 0px;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
 }
+
 .ui {
     display: flex;
     flex-direction: column;
     align-items: center;
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.3);
 }
+
 .row {
     display: flex;
-    box-shadow:5px 5px 20px black;
+    margin-bottom: 0px;
 }
+
 .cell {
-    border: none;
+    border: 2px solid #2c3e50;
     width: 80px;
     height: 80px;
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 24px;
+    font-size: 2rem;
+    font-weight: bold;
     text-align: center;
     cursor: pointer;
-    background-color:#e5ded3;
-    border:3px solid black;
-    /* border-radius:10px; */
+    background-color: #ecf0f1;
+    transition: background-color 0.3s, transform 0.2s;
+    border-radius: 8px;
 }
+
+.cell:hover {
+    background-color: #bdc3c7;
+    transform: scale(1.1);
+}
+
 .cell:active {
     outline: none;
-}
-/* 3*3 Grid */
-#b1{
-    border-bottom: 1.5px solid black;
-    border-right: 1.5px solid black;
-}
-
-#b2 {
-    border-bottom: 1.5px solid black;
-    border-right: 1.5px solid black;
-    border-left: 1.5px solid black;
-}
-
-#b3 {
-    border-bottom: 1.5px solid black;
-    border-left: 1.5px solid black;
-}
-
-#b4 {
-    border-top: 1.5px solid black;
-    border-bottom: 1.5px solid black;
-    border-right: 1.5px solid black;
-}
-    
-#b5 {
-    border: 1.5px solid black;
-}
-
-#b6 {
-    border-top: 1.5px solid black;
-    border-bottom: 1.5px solid black;
-    border-left: 1.5px solid black;
-}
-
-#b7 {
-    border-top: 1.5px solid black;
-    border-right: 1.5px solid black;
-}
-
-#b8 {
-    border-top: 1.5px solid black;
-    border-right: 1.5px solid black;
-    border-left: 1.5px solid black;
-}
-
-#b9 {
-    border-top: 1.5px solid black;
-    border-left: 1.5px solid black;
+    background-color: #626d6e;
 }
 
 #but {
-    box-sizing: border-box;
-    width: 95px;
-    height: 40px;
-    border: 2px solid dodgerblue;
-    margin-left: auto;
-    border-radius: 8px;
-    font-family: Verdana,
-        Geneva, Tahoma, sans-serif;
-    margin-top:8px;
-    background-color: whitesmoke;
-    color: dodgerblue;
-    font-size: 20px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 5px;
     cursor: pointer;
+    margin-top: 0px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s, transform 0.2s;
+    margin-left: 37%;
 }
 
-/* Player turn space */
+#but:hover {
+    background-color: #2980b9;
+    transform: scale(1.2);
+}
+
 #print {
-    /* font-family: Verdana,
-        Geneva, Tahoma, sans-serif; */
-    font-family:"Consolas";
-    color: dodgerblue;
-    font-size: 20px;
-}
-
-/* Main Container */
-#main {
-    text-align: center;
-}
-
-/* Game Instruction Text */
-#ins {
-    /* font-family: Verdana,Geneva, 
-                    Tahoma, sans-serif; */
-    color: rgb(13, 202, 51);
+    font-size: 1.2rem;
+    color: #e74c3c;
+    margin-top: 0px;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
 }
